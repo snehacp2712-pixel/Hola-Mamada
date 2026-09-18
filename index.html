@@ -1,0 +1,21 @@
+<head>
+    <title>My Surprise</title>
+</head>
+
+<body>
+    <h1>You've got a surprise! 🎁</h1>
+
+    <p>Click the button below.</p>
+
+    <button onclick="revealMessage()">Open Surprise</button>
+
+    <p id="secret"></p>
+
+    <script>
+        function revealMessage() {
+            document.getElementById("secret").textContent =
+                "😂 I KNOW THAT YOU HAVE A HULK INSIDE YOUR PANT!";
+        }
+    </script>
+</body>
+</html>
