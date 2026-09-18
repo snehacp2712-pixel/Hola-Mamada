@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html>
 <head>
     <title>My Surprise</title>
 </head>
@@ -9,12 +11,17 @@
 
     <button onclick="revealMessage()">Open Surprise</button>
 
-    <p id="secret"></p>
+    <div id="surprise" style="display: none;">
+        <h2>😂 I KNOW YOU HAVE A HULK INSIDE YOUR PANT!</h2>
+
+        <img src="eee.jpg" alt="Surprise"
+             style="max-width: 500px; width: 100%;">
+
+    </div>
 
     <script>
         function revealMessage() {
-            document.getElementById("secret").textContent =
-                "😂 I KNOW THAT YOU HAVE A HULK INSIDE YOUR PANT!";
+            document.getElementById("surprise").style.display = "block";
         }
     </script>
 </body>
